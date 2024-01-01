@@ -17,12 +17,12 @@ let resetIcon = document.querySelector('#reset-icon');
 const toggleTimer = () => {
   if (flag) {
     startButton.innerHTML = `<i class="fa-solid fa-pause"></i>`;
-    startButton.style.backgroundColor = "#f77f00";
+    startButton.style.backgroundColor = "#bf0603";
     startTimer();
     flag = false;
   } else {
     startButton.innerHTML = `<i class="fa-solid fa-play"></i>`;
-    startButton.style.backgroundColor = "#7be279";
+    startButton.style.backgroundColor = "#196e19";
     stopTimer();
     flag = true;
   }
@@ -66,7 +66,7 @@ const resetTimer = () => {
     clearInterval(Timer);
     flag = true;
     startButton.innerHTML = `<i class="fa-solid fa-play"></i>`;
-    startButton.style.backgroundColor = "#7be279";
+    startButton.style.backgroundColor = "#196e19";
     hourValue = 0;
     minuteValue = 0;
     secondValue = 0;
