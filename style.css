@@ -12,10 +12,7 @@ body {
   height: 100vh;
   font-family: Asap;
   font-weight: 600;
-  background: url("/cute-aesthetic-cartoon-pictures-wm3e9c8csk53jc0g.jpg");
-  background-size: cover;
-  background-position: center;
-  background-color: #006d77;
+  background-color: #adc178;
 }
 
 button {
@@ -41,18 +38,19 @@ body {
 }
 
 .container {
-  width: 350px;
+  width: 300px;
   height: 300px;
 }
 
 .stopwatch {
   width: 100%;
   height: 100%;
-  border-radius: 15px;
+  border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
   flex-direction: column;
   gap: 40px;
   backdrop-filter: blur(5px);
+  background-color: #e3edd7;
 }
 
 .title {
@@ -65,12 +63,12 @@ body {
   width: 85%;
   height: 50px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
-  border-radius: 10px;
-  background-color: #ffba08;
+  border-radius: 8px;
+  background-color: #cfe1b9;
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 800;
   color: #434343;
-  gap: 5px;
+  gap: 7px;
 }
 
 .buttons {
@@ -84,13 +82,14 @@ body {
   border-radius: 5px;
   border: none;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
-  font-size: 22px;
-  padding: 8px;
+  font-size: 20px;
+  padding: 5px;
 }
 
 #start-button {
-  background-color: #7be279;
+  background-color: #196e19;
   transition: all 0.3s linear;
+  color: #fff;
 }
 
 #reset-button {
