@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Asap:wght@600&family=Agbalumo&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: Asap;
+  font-weight: 600;
+  background: url("/cute-aesthetic-cartoon-pictures-wm3e9c8csk53jc0g.jpg");
+  background-size: cover;
+  background-position: center;
+  background-color: #006d77;
+}
+
+button {
+  cursor: pointer;
+}
+
+body,
+.stopwatch,
+.time-box,
+.buttons,
+.hours,
+.minutes,
+.seconds,
+.miliseconds {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  flex-direction: column;
+  gap: 20px;
+}
+
+.container {
+  width: 350px;
+  height: 300px;
+}
+
+.stopwatch {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  flex-direction: column;
+  gap: 40px;
+  backdrop-filter: blur(5px);
+}
+
+.title {
+  color: #4e4e4e;
+  font-family: Agbalumo;
+  font-size: 18px;
+}
+
+.time-box {
+  width: 85%;
+  height: 50px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  background-color: #ffba08;
+  font-size: 20px;
+  font-weight: 600;
+  color: #434343;
+  gap: 5px;
+}
+
+.buttons {
+  gap: 20px;
+  position: relative;
+}
+
+.btn {
+  width: 80px;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+  font-size: 22px;
+  padding: 8px;
+}
+
+#start-button {
+  background-color: #7be279;
+  transition: all 0.3s linear;
+}
+
+#reset-button {
+  transition: all 0.3s linear;
+}
+
+#start-button:active,
+#reset-button:active {
+  scale: 0.9;
+}
+
+.hours,
+.minutes,
+.seconds,
+.miliseconds {
+  border: 1px solid #000;
+  min-width: 45px;
+  height: 32px;
+  border-radius: 5px;
+  border: none;
+  background-color: #fff;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.7);
+}
+
+@keyframes rotate360 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.rotate {
+  animation: rotate360 0.35s linear;
+}
